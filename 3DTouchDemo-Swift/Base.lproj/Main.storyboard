@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_DTouchDemo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bb-sq-LIB">
+                                <rect key="frame" x="139" y="157" width="137" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="Eq5-fE-70G"/>
+                                    <constraint firstAttribute="width" constant="137" id="ypz-Wf-6Uk"/>
+                                </constraints>
+                                <state key="normal" title="modal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="11y-lU-eIR" kind="presentation" id="fiR-c9-nnU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84674292799999995" green="0.38987748309999998" blue="0.083381915919999994" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3bb-sq-LIB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="PeL-by-3NM"/>
+                            <constraint firstItem="3bb-sq-LIB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QFD-xm-req"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.971014492753625" y="20.758928571428569"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="Yco-t0-7xx">
+            <objects>
+                <viewController storyboardIdentifier="contentVC" id="11y-lU-eIR" customClass="ContentViewController" customModule="_DTouchDemo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sVq-Fe-0Hv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GvE-x1-A4O">
+                                <rect key="frame" x="20" y="81" width="374" height="728"/>
+                                <mutableString key="text">夜里造了美丽的恶梦
+想清醒我却抵不过心动
+梦嚃你是无底的黑洞
+我无力抗拒失重
+我的意识自控脉搏流动
+全被你神秘引力操控
+亲爱的你是危险的迷宫
+我找不到出口
+You took my heart away, away, away
+My head is blown away, away, away
+你就是传说来自天堂的魔鬼
+You took my heart away, away, away, away, away, away, away
+拜托别对我细心问候
+这是你也不擦觉的阴谋
+我讨厌你无心的微笑
+我快无可救药
+你像一个漩涡慢慢让我
+无法抽离一直地坠落
+亲爱的你是优雅的恶魔
+一点一点把我吞没
+You took my heart away, away, away
+My head is blown away, away, away
+你就是传说来自天堂的魔鬼
+You took my heart away, away, away, away, away, away, away
+如果你是蛇的诱惑 你存心迷惑 我才能软弱
+但你是牛顿头上那颗 若无其事的苹果</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Xm-Lg-w9q" firstAttribute="trailing" secondItem="GvE-x1-A4O" secondAttribute="trailing" constant="20" id="TJA-kT-vKO"/>
+                            <constraint firstItem="GvE-x1-A4O" firstAttribute="leading" secondItem="6Xm-Lg-w9q" secondAttribute="leading" constant="20" id="WIg-oS-o1F"/>
+                            <constraint firstItem="GvE-x1-A4O" firstAttribute="top" secondItem="6Xm-Lg-w9q" secondAttribute="top" constant="37" id="Z06-kq-rPS"/>
+                            <constraint firstItem="6Xm-Lg-w9q" firstAttribute="bottom" secondItem="GvE-x1-A4O" secondAttribute="bottom" constant="53" id="gp8-rZ-Hbw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Xm-Lg-w9q"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6c8-5h-JVR" appends="YES" id="vpj-Wk-9nH"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fqc-4n-H5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6c8-5h-JVR">
+                    <connections>
+                        <action selector="tap:" destination="11y-lU-eIR" id="Xne-tl-x5K"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1371.0144927536232" y="28.794642857142854"/>
+        </scene>
+        <!--Command View Controller-->
+        <scene sceneID="jpd-nH-Zs2">
+            <objects>
+                <viewController storyboardIdentifier="commandVC" id="zwZ-2e-4z3" customClass="CommandViewController" customModule="_DTouchDemo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b4H-Hk-uGP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="Dl6-qv-cwt"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Gsj-HO-p2g" appends="YES" id="ptl-fU-9Em"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Elb-lP-aco" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Gsj-HO-p2g">
+                    <connections>
+                        <action selector="tap:" destination="zwZ-2e-4z3" id="Yh5-Rv-ayg"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2157" y="29"/>
+        </scene>
+    </scenes>
+</document>

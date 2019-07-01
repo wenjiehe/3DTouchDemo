@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAk-My-mro">
+                                <rect key="frame" x="134.5" y="236" width="145" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="EsL-hU-pRo"/>
+                                    <constraint firstAttribute="height" constant="91" id="fhv-6c-mv8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kOB-26-0p4"/>
+                                    <segue destination="zvI-fc-Cur" kind="presentation" id="pUn-Ka-nw0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.65490196079999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iAk-My-mro" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hEu-Ym-hnO"/>
+                            <constraint firstItem="iAk-My-mro" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="192" id="nAs-3m-4WA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+        <!--Content View Controller-->
+        <scene sceneID="icd-aT-Irh">
+            <objects>
+                <viewController storyboardIdentifier="contentVC" id="zvI-fc-Cur" customClass="ContentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dnb-Ks-cHs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQq-xq-5wU">
+                                <rect key="frame" x="34" y="74" width="360" height="582"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="582" id="ECD-bw-Aqi"/>
+                                </constraints>
+                                <string key="text">夜里造了美丽的恶梦
+想清醒我却抵不过心动
+梦嚃你是无底的黑洞
+我无力抗拒失重
+我的意识自控脉搏流动
+全被你神秘引力操控
+亲爱的你是危险的迷宫
+我找不到出口
+You took my heart away, away, away
+My head is blown away, away, away
+你就是传说来自天堂的魔鬼
+You took my heart away, away, away, away, away, away, away
+拜托别对我细心问候\n这是你也不擦觉的阴谋
+我讨厌你无心的微笑
+我快无可救药
+你像一个漩涡慢慢让我
+无法抽离一直地坠落
+亲爱的你是优雅的恶魔
+一点一点把我吞没
+You took my heart away, away, away
+My head is blown away, away, away
+你就是传说来自天堂的魔鬼
+You took my heart away, away, away, away, away, away, away
+如果你是蛇的诱惑 你存心迷惑 我才能软弱
+但你是牛顿头上那颗 若无其事的苹果</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.8980392157" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="36c-Th-FNv" firstAttribute="trailing" secondItem="MQq-xq-5wU" secondAttribute="trailing" constant="20" id="HMV-oX-Lu8"/>
+                            <constraint firstItem="MQq-xq-5wU" firstAttribute="leading" secondItem="36c-Th-FNv" secondAttribute="leading" constant="34" id="Rfw-mY-LoF"/>
+                            <constraint firstItem="MQq-xq-5wU" firstAttribute="top" secondItem="36c-Th-FNv" secondAttribute="top" constant="30" id="ybR-fM-efd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="36c-Th-FNv"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3pT-bK-LfY" appends="YES" id="ndJ-Tt-E3S"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mJx-r1-kwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3pT-bK-LfY">
+                    <connections>
+                        <action selector="tap:" destination="zvI-fc-Cur" id="n4J-q4-FAQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="969.56521739130437" y="120.53571428571428"/>
+        </scene>
+        <!--Command View Controller-->
+        <scene sceneID="55x-ER-v0A">
+            <objects>
+                <viewController storyboardIdentifier="commandvc" id="pFG-Lc-vpa" customClass="CommandViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mxd-LT-gX4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.84674292802810669" green="0.38987748307734221" blue="0.083381915915718738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="4T4-fD-ks1"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="nIH-E6-1ad" appends="YES" id="r3F-yK-RBz"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cv2-pw-iUZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="nIH-E6-1ad">
+                    <connections>
+                        <action selector="tap:" destination="pFG-Lc-vpa" id="UCH-o6-iLe"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1816" y="121"/>
+        </scene>
+    </scenes>
+</document>
